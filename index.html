@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Hold giveaways on your Discord server quickly and easily! GiveawayBot is an open-source Discord Giveaway bot that assists with hosting automated giveaways.">
+    <meta name="keywords" content="Discord, GiveawayBot, Giveaway, Giveaways, Discord Bot, Boat, Contest, Free, FOSS, OSS, Open Source">
+    <meta name="author" content="jagrosh">
+    <meta property="og:title" content="GiveawayBot - Discord Giveaway Bot">
+    <meta property="og:site_name" content="Discord GiveawayBot">
+    <meta property="og:image" content="../i.imgur.com/sCEbmKa.png">
+    <meta property="og:description" content="Hold giveaways on your Discord server quickly and easily!">
+    <meta name="theme-color" content="#7289DA">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>GiveawayBot - Discord Giveaway Bot</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts from Google -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script data-ad-client="ca-pub-8512411925677795" async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                	<span class="glyphicon glyphicon"></span>
+                	GiveawayBot
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+              <li>
+                  <a href="invite.html">Invite</a>
+              </li>
+              <li>
+                  <a href="https://github.com/jagrosh/GiveawayBot">Github</a>
+              </li>
+              <li>
+                  <a href="support.html">Support</a>
+              </li>
+			  <li>
+                  <a href="donate.html">Donate</a>
+              </li>
+              <li>
+                  <a href="https://twitter.com/GiveawayDiscord">Twitter</a>
+              </li>
+          </ul>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+
+	<!-- Header -->
+    <header>
+        <div class="header-content">
+          <img src="images/giveaway_ava_epic.png" alt="GiveawayBot Logo">
+            <div class="header-content-inner">
+                <h1>GiveawayBot</h1>
+                <p>Hold giveaways on your <b>Discord</b> server quickly and easily!</p>
+                <p><img src="https://img.shields.io/badge/dynamic/json.svg?label=Servers&amp;style=for-the-badge&amp;url=https%3A%2F%2Fdiscord.bots.gg%2Fapi%2Fv1%2Fbots%2F294882584201003009&amp;query=%24.guildCount&amp;colorB=7289DA" alt="Server Count">
+                   <!--img src="https://img.shields.io/badge/dynamic/json.svg?label=Status&amp;style=for-the-badge&amp;url=https%3A%2F%2Fdiscord.bots.gg%2Fapi%2Fv1%2Fbots%2F294882584201003009&amp;query=%24.status&amp;colorB=7289DA" alt="Bot Status"--></p>
+                <a href="invite.html" class="btn btn-primary btn-lg">Add to Discord</a> 
+		<a href="donate.html" class="btn btn-primary btn-lg">Get Premium</a>
+            </div>
+        </div>
+    </header>
+
+	<!-- Intro Section -->
+    <section class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                	<span style="font-size: 60px"></span>
+                    <h2 class="section-heading">Start Holding Giveaways!!</h2>
+                    <p class="text-light intro-body"><b>/ghelp</b> - shows the available commands</p>
+                    <br>
+                    <p class="text-light intro-body"><b>/gabout</b> - shows information about the bot</p>
+                    <br>
+                    <p class="text-light intro-body"><b>/ginvite</b> - shows a link to add the bot to your server</p>
+                    <br><br>
+                    <p class="text-light intro-body"><b>/gcreate</b> - creates a giveaway (interactive setup)</p>
+                    <br>
+                    <p class="text-light intro-body"><b>/gstart &lt;time&gt; &lt;winners&gt; &lt;prize&gt;</b> - starts a giveaway with the provided number of seconds.
+                                          For example, <b>/gstart 30s 2 Steam Code</b> would start a 30-second giveaway for a Steam Code with 2 winners!
+                                          To use minutes/hours/days instead of seconds, simply include an "m", "h", or "d" in the time ~ <b>/gstart 3m ...</b> would be a 3-minute giveaway.</p>
+                    <br><br>
+                    <p class="text-light intro-body"><b>/gend &lt;giveaway_id&gt;</b> - ends the specified currently-running giveaway and picks the appropriate number of winners immediately.</p>
+                    <br>
+                    <p class="text-light intro-body"><b>/gdelete &lt;giveaway_id&gt;</b> - deletes the specified giveaway without picking winners.</p>
+                    <br>
+                    <p class="text-light intro-body"><b>/glist</b> - lists all the currently-running giveaways on the server</p>
+                    <br>
+                    <p class="text-light intro-body"><b>/greroll &lt;giveaway_id&gt;</b> - picks a new winner from the specified giveaway. You can also right-click (or long-press on mobile) on an ended giveaway and select <b>Apps</b> &gt; <b>Reroll Giveaway</b> to reroll.</p>
+                    <br><br>
+                    <p class="text-light intro-body"><b>/gsettings show</b> - shows GiveawayBot's settings on the server. Some settings are set automatically, such as locale.</p>
+                    <br>
+                    <p class="text-light intro-body"><b>/gsettings set color &lt;hex_code&gt;</b> - sets the color of the embed used for giveaways</p>
+                    <br>
+                    <p class="text-light intro-body"><b>/gsettings set emoji &lt;emoji&gt;</b> - sets the emoji or text used on the button to enter giveaways</p>
+                    <!--img style="border-radius: 15px; width: 100%;" src="./images/example_giveaway_2.gif" alt="Example Setup of GiveawayBot-->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright etc -->
+        <div class="small-print">
+        	<div class="container">
+                <br><br><br><br>
+        		<p>Copyright &copy; jagrosh 2017-2022</p>
+        	</div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="js/custom.js"></script>
+
+    <!-- Dialogflow Helper -->
+    <script src="../www.gstatic.com/dialogflow-console/fast/messenger/bootstrap3860.js?v=1"></script>
+    <df-messenger
+      chat-icon="https://storage.googleapis.com/cloudprod-apiai/6b63e41e-5a11-435c-abc4-0093753795e3_x.png"
+      chat-title="GiveawayBot"
+      agent-id="b1091570-715d-4bfc-a439-cc6465b1c79f"
+      language-code="en"
+    ></df-messenger>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-105328174-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+</body>
+
+</html>
